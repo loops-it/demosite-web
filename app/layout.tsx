@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "../styles/globals.css";
+import "@/styles/globals.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import { useEffect } from "react";
+
 
 export const metadata: Metadata = {
   title: "KodeTech",
@@ -12,6 +15,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  // useEffect(() => {
+  //   import('bootstrap/dist/js/bootstrap.bundle.min.js');
+  // }, []);
   return (
     <html lang="en">
       <body>{children}</body>
