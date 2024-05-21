@@ -8,6 +8,41 @@
   --color-gray: #4D5053;
   --color-black: #000000;
   --color-white: #ffffff;
+
+  --main-vw-padding: 100px;
+
+  --hero-title-font-size: 70px;
+  --hero-title-line-height: 84px;
+  --max-content-width: 1800px
+}
+
+@media (min-width: 1920px){
+  :root{
+    --hero-title-font-size: 90px;
+    --hero-title-line-height: 124px
+  }
+}
+
+@media (max-width: 1400px){
+  :root {
+    --main-vw-padding: 50px;
+    --hero-title-font-size: 70px;
+    --hero-title-line-height: 80px
+  }
+}
+
+@media (max-width: 992px){
+  :root {
+    --main-vw-padding: 50px;
+    --hero-title-font-size: 50px;
+    --hero-title-line-height: 64px
+  }
+}
+
+@media (max-width: 600px){
+  :root {
+    --main-vw-padding: 20px;
+  }
 }
 
 
@@ -52,4 +87,32 @@ h1, h2, h3, h4, h5, h6, p, a, li, input, select, option, textarea, label{
 }
 .nav-link:hover{
   color: var(--color-primary-red) !important;
+}
+.heroSec{
+  height: calc(100vh - 76px);
+  width: 100vw;
+  background-position: right bottom, center center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto 80vh , cover;
+  background-blend-mode: normal , normal;
+}
+
+.sec-x-padding{
+  padding: var(--main-vw-padding);
+}
+
+.heroSec h2{
+  color: var(--color-white);
+  font-size: var(--hero-title-font-size);
+  font-weight: 400;
+  line-height: var(--hero-title-line-height);
+}
+
+.heroSec h2 span{
+  color: var(--color-primary-red);
+  font-weight: 700;
+}
+
+.max-width-on-xl-screen{
+  max-width: var(--max-content-width);
 }

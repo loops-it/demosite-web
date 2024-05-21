@@ -49,8 +49,8 @@ const Header = () => {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-white px-lg-3 py-lg-3">
-                <div className="container-fluid">
+            <nav className="navbar navbar-expand-lg bg-white px-lg-3 sec-x-padding py-lg-3">
+                <div className="container-fluid max-width-on-xl-screen">
                     <Link className="navbar-brand " href="/">
                         <Image src={logo} alt='' width={100} height={50} className={pageStyles.siteLogo} />
                     </Link>
