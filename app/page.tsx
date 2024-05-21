@@ -21,7 +21,7 @@ export default function Home() {
       </div>
       {/* section 2 - who we are */}
       <div className="whoWeAre d-flex flex-column flex-lg-row justify-content-center align-items-center sec-x-padding py-5">
-        <div className="col-12 col-lg-6 p-5 ">
+        <div className="col-12 col-lg-6 py-5 ">
           <h2>Partner with Kode Tech
           Solutions for digital success.
           </h2>
