@@ -28,7 +28,7 @@ export default function Home() {
           <p>Kode Tech (Pvt) Ltd is a well-established and renowned software development company with a rich legacy spanning over 14 years. Our extensive expertise has earned us a strong foothold in 15 international markets, where we’ve successfully delivered over 1,500 projects. Our innovative and creative approach and cutting-edge technologies always help for a better experience.</p>
           <ButtonPrimaryArrow id="buttonNav" title="Explore More" link='/' />
         </div>
-        <div className="col-12 col-lg-6 p-5 d-flex justify-content-center align-items-center">
+        <div className="col-12 col-lg-6 py-5 d-flex justify-content-center align-items-center">
           <Image src={whoWeAre} alt='' width={500} height={500} className={'whoWeAreImg'} />
         </div>
       </div>
