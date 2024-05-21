@@ -13,3 +13,12 @@ export const ButtonPrimary: React.FC<ButtonPrimaryProps> = ({ link, title, id })
     </Link>
   );
 };
+
+
+export const ButtonHero: React.FC<ButtonPrimaryProps> = ({ link, title, id }) => {
+    return (
+      <Link key={id} className="navButton" href={link} style={{padding: '10px 50px !important;'}}>
+        {title}
+      </Link>
+    );
+  };
