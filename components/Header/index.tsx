@@ -1,8 +1,10 @@
+/* eslint-disable react/jsx-key */
 import { logo } from '@/constants/images'
 import Image from 'next/image'
 import React from 'react'
 import pageStyles from '@/styles/page.module.css'
 import Link from 'next/link'
+import { ButtonPrimary } from '../Buttons'
 
 const Header = () => {
 
@@ -68,9 +70,9 @@ const Header = () => {
                                     );
                                 } else if (item.type === 'buttonType') {
                                     return (
-                                        <Link key={item.id} className="navButton" href={item.link}>
-                                            {item.title}
-                                        </Link>
+                                        <div style={{marginLeft: "30px"}}>
+                                            <ButtonPrimary  id="buttonNav" title={item.title} link={item.link} />
+                                        </div>
                                     );
                                 }
                                 return null;
