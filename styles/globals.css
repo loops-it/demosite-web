@@ -13,13 +13,17 @@
 
   --hero-title-font-size: 70px;
   --hero-title-line-height: 84px;
-  --max-content-width: 1800px
+  --max-content-width: 1800px;
+  --headingStyleFS: 50px;
+  --paraStyleTwo: 20px;
 }
 
 @media (min-width: 1920px){
   :root{
     --hero-title-font-size: 90px;
-    --hero-title-line-height: 124px
+    --hero-title-line-height: 124px;
+    --headingStyleFS: 50px;
+    --paraStyleTwo: 20px;
   }
 }
 
@@ -27,7 +31,9 @@
   :root {
     --main-vw-padding: 50px;
     --hero-title-font-size: 70px;
-    --hero-title-line-height: 80px
+    --hero-title-line-height: 80px;
+    --headingStyleFS: 40px;
+    --paraStyleTwo: 16px;
   }
 }
 
@@ -35,13 +41,16 @@
   :root {
     --main-vw-padding: 50px;
     --hero-title-font-size: 50px;
-    --hero-title-line-height: 64px
+    --hero-title-line-height: 64px;
+    --headingStyleFS: 36px;
+    --paraStyleTwo: 16px;
   }
 }
 
 @media (max-width: 600px){
   :root {
     --main-vw-padding: 20px;
+    --paraStyleTwo: 14px;
   }
 }
 
@@ -139,4 +148,19 @@ body{
   width: 80%;
   height: auto;
   border-radius: 20px;
+}
+.headingStyleOne{
+  color: var(--color-black);
+  font-size: var(--headingStyleFS);
+  font-weight: 500;
+}
+.headingStyleOne span{
+  color: var(--color-primary-red);
+  font-weight: 600;
+}
+
+.paraStyleOne{
+  color: var(--color-gray);
+  font-size: var(--paraStyleTwo);
+  font-weight: 400;
 }
