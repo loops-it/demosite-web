@@ -3,22 +3,25 @@ import styles from "@/styles/page.module.css";
 import Header from "@/components/Header";
 import { ButtonHero, ButtonPrimaryArrow } from "@/components/Buttons";
 import { whoWeAre } from "@/constants/images";
+import { HeroTitle } from "@/components/Titles";
 
 
 export default function Home() {
+
+
   return (
     <main className={styles.main}>
       <Header />
+
+      {/* section 1 - hero */}
       <div className="heroSec d-flex flex-column flex-lg-row justify-content-center align-items-center sec-x-padding" style={{ backgroundImage: `url('/backgrounds/slide1-content-image.png'), url('/backgrounds/slide1-bg-image.jpg')` }}>
         <div className="col-12 max-width-on-xl-screen d-flex flex-column">
-          <h2 className="mb-4">
-            Start to achieve <br>
-            </br>Your Success With <br />
-            <span>Kode Tech</span>
-          </h2>
+        <HeroTitle id="1" titleLineOne={"Start to achieve"} titleLineTwo={"Your Success With"} titleInRedColor={"Kode Tech"} />
           <ButtonHero id="buttonNav" title="Contact Us" link='/' />
         </div>
       </div>
+
+
       {/* section 2 - who we are */}
       <div className="whoWeAre d-flex flex-column flex-lg-row justify-content-center align-items-center sec-x-padding py-5">
         <div className="col-12 col-lg-6 py-5 ">
@@ -32,6 +35,8 @@ export default function Home() {
           <Image src={whoWeAre} alt='' width={500} height={500} className={'whoWeAreImg'} />
         </div>
       </div>
+
+      
     </main>
   );
 }
