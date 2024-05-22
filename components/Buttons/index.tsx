@@ -27,7 +27,7 @@ export const ButtonHero: React.FC<ButtonPrimaryProps> = ({ link, title, id }) =>
 
   export const ButtonPrimaryArrow: React.FC<ButtonPrimaryProps> = ({ link, title, id }) => {
     return (
-      <Link key={id} className="navButton" href={link} style={{padding: '10px 50px !important;'}}>
+      <Link key={id} className="arrowButtonRedBg" href={link} style={{padding: '10px 20px !important;'}}>
         {title}
         <FaChevronRight />
       </Link>
