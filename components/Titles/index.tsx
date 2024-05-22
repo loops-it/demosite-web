@@ -14,8 +14,12 @@ interface HeadingOne {
     titleInRedColor: string;
 }
 
+interface SectionTitle {
+    title: string;
+}
+
 export const HeroTitle: React.FC<HeroTitle> = ({ id, titleLineOne, titleLineTwo, titleInRedColor }) => {
-    
+
     return (
         <>
             <h2 id={id} className="mb-4">
@@ -28,15 +32,27 @@ export const HeroTitle: React.FC<HeroTitle> = ({ id, titleLineOne, titleLineTwo,
 };
 
 
+export const HeadingOne: React.FC<HeadingOne> = ({ titleLineOne, titleLineTwo, titleInRedColor }) => {
 
-export const HeadingOne: React.FC<HeadingOne> = ({ titleLineOne, titleLineTwo, titleInRedColor  }) => {
-    
     return (
         <>
             <h2 className="mb-4 headingStyleOne">
-            {titleLineOne} <span>{titleInRedColor}</span><br></br>
-                {titleLineTwo} 
+                {titleLineOne} <span>{titleInRedColor}</span><br></br>
+                {titleLineTwo}
             </h2>
+        </>
+    );
+};
+
+export const SectionTitle: React.FC<SectionTitle> = ({ title }) => {
+
+    return (
+        <>
+            <div className="d-flex flex-row align-items-center mb-5">
+                <div className="lineShort"></div>
+                <div className="lineLong"></div>
+                <h2 className="mb-0 secTitleOne">{title}</h2>
+            </div>
         </>
     );
 };
