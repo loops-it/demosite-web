@@ -1,23 +1,10 @@
 import Image from "next/image";
 import styles from "@/styles/page.module.css";
-import Header from "@/components/Header";
 import { ButtonHero, ButtonPrimaryArrow } from "@/components/Buttons";
 import { whoWeAre } from "@/constants/images";
 import { HeadingOne, HeroTitle, SectionTitle, SectionTitleStyleTwo } from "@/components/Titles";
 import { kodeTechName } from "@/constants/variables";
 import { Paragraph } from "@/components/Paragraph";
-import { ServicesSolutions } from "@/components/Sliders";
-
-// import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 
 export default function Home() {
@@ -25,7 +12,6 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Header />
 
       {/* section 1 - hero */}
       <div className="heroSec d-flex flex-column flex-lg-row justify-content-center align-items-center sec-x-padding" style={{ backgroundImage: `url('/backgrounds/slide1-content-image.png'), url('/backgrounds/slide1-bg-image.jpg')` }}>

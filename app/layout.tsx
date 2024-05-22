@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 // import { useEffect } from "react";
 
 
@@ -21,7 +23,11 @@ export default function RootLayout({
   // }, []);
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+      <Header />
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }
