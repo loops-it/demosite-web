@@ -3,7 +3,7 @@ import styles from "@/styles/page.module.css";
 import Header from "@/components/Header";
 import { ButtonHero, ButtonPrimaryArrow } from "@/components/Buttons";
 import { whoWeAre } from "@/constants/images";
-import { HeadingOne, HeroTitle, SectionTitle } from "@/components/Titles";
+import { HeadingOne, HeroTitle, SectionTitle, SectionTitleStyleTwo } from "@/components/Titles";
 import { kodeTechName } from "@/constants/variables";
 import { Paragraph } from "@/components/Paragraph";
 
@@ -35,6 +35,18 @@ export default function Home() {
         <div className="col-12 col-lg-6 py-5 d-flex justify-content-center align-items-center">
           <Image src={whoWeAre} alt='' width={500} height={500} className={'whoWeAreImg'} />
         </div>
+      </div>
+
+
+      {/* section 3 - Our Services */}
+      <div className="ourServices d-flex flex-column flex-lg-row justify-content-center align-items-start sec-x-padding py-5">
+        <SectionTitleStyleTwo textColor="#000000" title="Our Services" desc="Explore how we can create your success story through our wide range of capabilities." />
+      </div>
+
+
+      {/* section 4 - Services Solutions */}
+      <div className="ourSolutions d-flex flex-column flex-lg-row justify-content-center align-items-start sec-x-padding py-5">
+        <SectionTitleStyleTwo textColor="#ffffff" title="Services Solutions" desc="These feedbacks will confirm to you that we have led our clients to success." />
       </div>
 
 

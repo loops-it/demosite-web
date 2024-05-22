@@ -18,36 +18,39 @@
   --paraStyleTwo: 20px;
 }
 
-@media (min-width: 1920px){
-  :root{
+@media (min-width: 1920px) {
+  :root {
     --hero-title-font-size: 90px;
     --hero-title-line-height: 124px;
     --headingStyleFS: 50px;
     --paraStyleTwo: 20px;
+    --secTitleFS: 50px;
   }
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
   :root {
     --main-vw-padding: 50px;
     --hero-title-font-size: 70px;
     --hero-title-line-height: 80px;
     --headingStyleFS: 40px;
     --paraStyleTwo: 16px;
+    --secTitleFS: 40px;
   }
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
   :root {
     --main-vw-padding: 50px;
     --hero-title-font-size: 50px;
     --hero-title-line-height: 64px;
     --headingStyleFS: 36px;
     --paraStyleTwo: 16px;
+    --secTitleFS: 36px;
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   :root {
     --main-vw-padding: 20px;
     --paraStyleTwo: 14px;
@@ -71,23 +74,37 @@ a {
 }
 
 
-h1, h2, h3, h4, h5, h6, p, a, li, input, select, option, textarea, label{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+input,
+select,
+option,
+textarea,
+label {
   font-family: var(--font-primary);
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
 
 /* bootstrap overrides */
-.nav-link{
+.nav-link {
   color: var(--color-black);
   font-family: 16px;
   font-weight: 700;
   margin-left: 30px;
 }
-.navButton{
+
+.navButton {
   color: var(--color-white) !important;
   background-color: var(--color-primary-red) !important;
   font-family: 16px;
@@ -97,18 +114,19 @@ body{
   text-decoration: none !important;
   width: max-content;
 }
-.nav-link:hover{
+
+.nav-link:hover {
   color: var(--color-primary-red) !important;
 }
 
 
 
 /* styles - all */
-.sec-x-padding{
+.sec-x-padding {
   padding: var(--main-vw-padding);
 }
 
-.max-width-on-xl-screen{
+.max-width-on-xl-screen {
   max-width: var(--max-content-width);
 }
 
@@ -116,55 +134,59 @@ body{
 
 
 /* styles - hero sec*/
-.heroSec{
+.heroSec {
   height: calc(100vh - 76px);
   width: 100vw;
   background-position: right bottom, center center;
   background-repeat: no-repeat, no-repeat;
-  background-size: auto 80vh , cover;
-  background-blend-mode: normal , normal;
+  background-size: auto 80vh, cover;
+  background-blend-mode: normal, normal;
 }
 
-.heroSec h2{
+.heroSec h2 {
   color: var(--color-white);
   font-size: var(--hero-title-font-size);
   font-weight: 400;
   line-height: var(--hero-title-line-height);
 }
 
-.heroSec h2 span{
+.heroSec h2 span {
   color: var(--color-primary-red);
   font-weight: 700;
 }
 
 
 /* styles - who we are sec*/
-.whoWeAre{
+.whoWeAre {
   height: 85vh;
   width: 100vw;
   background-color: #C5C5C5;
 }
-.whoWeAreImg{
+
+.whoWeAreImg {
   width: 80%;
   height: auto;
   border-radius: 20px;
 }
-.headingStyleOne{
+
+.headingStyleOne {
   color: var(--color-black);
   font-size: var(--headingStyleFS);
   font-weight: 500;
 }
-.headingStyleOne span{
+
+.headingStyleOne span {
   color: var(--color-primary-red);
   font-weight: 600;
 }
 
-.paraStyleOne{
+.paraStyleOne {
   color: var(--color-gray);
   font-size: var(--paraStyleTwo);
   font-weight: 400;
 }
-.arrowButtonRedBg{
+
+.arrowButtonRedBg {
   color: var(--color-white) !important;
   background-color: var(--color-primary-red) !important;
   font-family: 16px;
@@ -173,21 +195,49 @@ body{
   text-decoration: none !important;
   width: max-content;
 }
-.lineShort{
+
+.lineShort {
   width: 35px;
   height: 4px;
   background-color: var(--color-primary-red);
   margin-right: 20px;
 }
-.lineLong{
+
+.lineLong {
   width: 100px;
   height: 4px;
   background-color: var(--color-primary-red);
   margin-right: 80px;
 }
 
-.secTitleOne{
+.secTitleOne {
   color: var(--color-black);
   font-size: 26px;
   font-weight: 600;
+}
+
+.secTitleStyleTwo h2 {
+  font-size: var(--secTitleFS);
+  font-weight: 600;
+}
+.secTitleStyleTwo p {
+  font-size: var(--paraStyleTwo);
+  font-weight: 400;
+}
+
+.ourServices{
+  background-color: var(--color-white);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.ourSolutions{
+  background-color: var(--color-white);
+  width: 100vw;
+  min-height: 80vh;
+  background-image: url('/backgrounds/slide1-bg-image.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: normal;
 }

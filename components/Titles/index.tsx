@@ -18,6 +18,12 @@ interface SectionTitle {
     title: string;
 }
 
+interface SectionTitleStyleTwo {
+    title: string;
+    desc: string;
+    textColor: string;
+}
+
 export const HeroTitle: React.FC<HeroTitle> = ({ id, titleLineOne, titleLineTwo, titleInRedColor }) => {
 
     return (
@@ -52,6 +58,18 @@ export const SectionTitle: React.FC<SectionTitle> = ({ title }) => {
                 <div className="lineShort"></div>
                 <div className="lineLong"></div>
                 <h2 className="mb-0 secTitleOne">{title}</h2>
+            </div>
+        </>
+    );
+};
+
+export const SectionTitleStyleTwo: React.FC<SectionTitleStyleTwo> = ({ title, desc, textColor }) => {
+
+    return (
+        <>
+            <div className="d-flex flex-column align-items-center mb-5 secTitleStyleTwo">
+                <h2 className="mb-4" style={{color: `${textColor}`}}>{title}</h2>
+                <p className="mb-0" style={{color: `${textColor}`}}>{desc}</p>
             </div>
         </>
     );
