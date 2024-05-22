@@ -12,7 +12,9 @@ const Footer = () => {
 
     return (
         <>
-           <h1>Footer</h1>
+           <div style={{backgroundColor: '#000'}} className='d-flex justify-content-center align-items-center p-5'>
+           <h1 style={{color: '#fff'}}>Footer</h1>
+           </div>
         </>
     )
 }
