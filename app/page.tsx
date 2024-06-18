@@ -5,6 +5,12 @@ import { whoWeAre } from "@/constants/images";
 import { HeadingOne, HeroTitle, SectionTitle, SectionTitleStyleTwo } from "@/components/Titles";
 import { kodeTechName } from "@/constants/variables";
 import { Paragraph } from "@/components/Paragraph";
+import { ServicesSolutions } from "@/components/Sliders";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
 
 
 export default function Home() {
@@ -43,8 +49,10 @@ export default function Home() {
 
 
       {/* section 4 - Services Solutions */}
-      <div className="ourSolutions d-flex flex-column flex-lg-row justify-content-center align-items-start sec-x-padding py-5">
+      <div className="ourSolutions d-flex flex-column justify-content-center align-items-center sec-x-padding py-5">
         <SectionTitleStyleTwo textColor="#ffffff" title="Services Solutions" desc="These feedbacks will confirm to you that we have led our clients to success." />
+       
+        <ServicesSolutions id="1" text='QA Outsource Work' description="Kode Tech (Pvt) Ltd is a well-established and renowned software development company with a rich legacy spanning over 14 years. Our extensive expertise has earned us a strong foothold in 15 international markets, where we’ve successfully delivered over 1,500 projects. Our innovative and creative approach and cutting-edge technologies always help for a better experience." buttonText="Learn More" buttonLink="/" />
       </div>
 
 

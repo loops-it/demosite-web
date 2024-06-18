@@ -160,7 +160,7 @@ body {
 .whoWeAre {
   height: 85vh;
   width: 100vw;
-  background-color: #C5C5C5;
+  background-color: #c5c5c55b;
 }
 
 .whoWeAreImg {
@@ -240,4 +240,45 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: normal;
+}
+
+
+.sliderCard{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 75vw;
+}
+.sliderCard .left{
+  /* background-color: #fff; */
+}
+
+.sliderCard .right{
+  background-color: #FFF4F4;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.sliderCard .right h3{
+  color: #000;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.sliderCard .right p{
+  color: #4D5053;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.arrowButtonRedLine {
+  color:  var(--color-primary-red) !important;
+  background-color: #fff;
+  font-family: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: solid 1px  var(--color-primary-red) !important;;
+  text-decoration: none !important;
+  width: max-content;
+  padding: 10px;
 }
