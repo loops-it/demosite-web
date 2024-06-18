@@ -31,9 +31,9 @@ export const ServicesSolutions: React.FC<ServicesSolutions> = ({ id, text, descr
                     <Image src={serviceSliderImg1} width={300} height={300} className='img-fluid' alt={''} style={{width: '100%', height: 'auto'}} />
                 </div>
                 <div className="col-12 col-lg-6 d-flex flex-column right">
-                    <h3 className=''>{text}</h3>
-                    <p>{description}</p>
-                    <Link className="arrowButtonRedLine" href={buttonLink} style={{ padding: '10px 20px !important;' }}>
+                    <h3 className='mb-0'>{text}</h3>
+                    <p style={{marginTop: '30px', marginBottom: '30px'}}>{description}</p>
+                    <Link className="arrowButtonRedLine" href={buttonLink} style={{ padding: '10px 20px !important' }}>
                         {buttonText}
                         <FaChevronRight />
                     </Link>
