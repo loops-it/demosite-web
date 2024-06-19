@@ -7,6 +7,7 @@ import { FaChevronRight } from 'react-icons/fa6';
 import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/css';
+import { ServiceArrow } from '../SVG/serviceArrow';
 
 
 
@@ -26,7 +27,8 @@ export const ServicesSolutions: React.FC<ServicesSolutions> = ({ id, text, descr
     // const swiper = new Swiper();
     return (
         <>
-            <div className="d-flex flex-column flex-lg-row sliderCard" style={{margin: "0px auto"}}>
+            <div className="d-flex position-relative sliderCard" style={{margin: "0px auto"}}>
+            <div className="d-flex flex-column flex-lg-row  " style={{zIndex: '1'}} >
                 <div className="col-12 col-lg-6 left">
                     <Image src={serviceSliderImg1} width={300} height={300} className='img-fluid' alt={''} style={{width: '100%', height: 'auto'}} />
                 </div>
@@ -37,6 +39,10 @@ export const ServicesSolutions: React.FC<ServicesSolutions> = ({ id, text, descr
                         {buttonText}
                         <FaChevronRight />
                     </Link>
+                </div>
+            </div>
+            <div className="d-flex serviceArrow" style={{ zIndex: '3'}}>
+                    <ServiceArrow />
                 </div>
             </div>
         </>

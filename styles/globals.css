@@ -303,3 +303,9 @@ body {
 .ant-carousel .slick-dots .slick-active button{
   background-color: #EB131B !important;
 }
+
+.serviceArrow{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
