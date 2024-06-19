@@ -2,6 +2,7 @@ import { Carousel } from 'antd';
 import React from 'react';
 import { ServicesSolutions } from './ServiceSolutionSlide';
 import { CaseStudySlide } from './CaseStudySlide';
+import { TestimonialSlide } from './TestimonialSlide';
 
 
 
@@ -49,3 +50,25 @@ export const CaseStudySlider = () => {
     );
 };
 
+
+
+export const TestimonialSlider = () => {
+
+    return (
+        <>
+            <div className="d-block mb-5 position-relative" style={{ display: 'block !important' }}>
+                <Carousel autoplay effect="fade">
+                    <div key="slide1">
+                        <TestimonialSlide id={1} name='Rachintha de Silva' description="I had a wonderful experience working with Kodetech solutions . They provide professional high quality and creative solutions. The service provided by Kodetech solutions in terms of web site and booking platform was exellent.  " position="CEO (Vacation.lk)" rating={3} />
+                    </div>
+                    <div key="slide2">
+                    <TestimonialSlide id={2} name='Rachintha de Silva' description="I had a wonderful experience working with Kodetech solutions . They provide professional high quality and creative solutions. The service provided by Kodetech solutions in terms of web site and booking platform was exellent.  " position="CEO (Vacation.lk)" rating={5} />
+                    </div>
+                    <div key="slide3">
+                    <TestimonialSlide id={3} name='Rachintha de Silva' description="I had a wonderful experience working with Kodetech solutions . They provide professional high quality and creative solutions. The service provided by Kodetech solutions in terms of web site and booking platform was exellent.  " position="CEO (Vacation.lk)" rating={4} />
+                    </div>
+                </Carousel>
+            </div>
+        </>
+    );
+};
