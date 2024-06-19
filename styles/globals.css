@@ -282,3 +282,24 @@ body {
   width: max-content;
   padding: 10px;
 }
+
+.ant-carousel .slick-dots-bottom{
+  bottom: -20px !important;
+}
+
+
+.ant-carousel .slick-dots li{
+  width: 20px !important;
+  height: 5px !important;
+}
+.ant-carousel .slick-dots li button{
+  background-color: #DDDDDD !important;
+  opacity: 0.8 !important;
+  height: 5px !important;
+}
+.ant-carousel .slick-dots .slick-active{
+  width: 35px !important;
+}
+.ant-carousel .slick-dots .slick-active button{
+  background-color: #EB131B !important;
+}

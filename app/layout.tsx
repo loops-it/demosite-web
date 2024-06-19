@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 // import { useEffect } from "react";
 
 
@@ -24,9 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <Header />
+      <AntdRegistry>
+        <Header />
         {children}
         <Footer />
+        </AntdRegistry>
         </body>
     </html>
   );
