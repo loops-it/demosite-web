@@ -27,7 +27,7 @@ export const ServicesSolutions: React.FC<ServicesSolutions> = ({ id, text, descr
             <div className="d-flex position-relative sliderCard" style={{margin: "0px auto"}}>
             <div className="d-flex flex-column flex-lg-row  " style={{zIndex: '1'}} >
                 <div className="col-12 col-lg-6 left">
-                    <Image src={serviceSliderImg1} width={1008} height={635} className='img-fluid' alt={''} style={{width: '100%', height: 'auto'}} />
+                    <Image layout="responsive" quality={100} src={serviceSliderImg1} width={1008} height={635} className='img-fluid' alt={''} style={{width: '100%', height: 'auto'}} />
                 </div>
                 <div className="col-12 col-lg-6 d-flex flex-column right">
                     <h3 className='mb-0'>{text}</h3>
