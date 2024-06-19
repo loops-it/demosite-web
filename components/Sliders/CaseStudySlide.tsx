@@ -10,8 +10,8 @@ export const CaseStudySlide = () => {
             <div className="d-flex position-relative caseCard" style={{ margin: "0px auto" }}>
                 <Image
                     src={caseDevice1}
-                    width={300}
-                    height={300}
+                    width={1008} height={635}
+                    layout="responsive" quality={100}
                     className="img-fluid"
                     alt={""}
                     style={{ width: "100%", height: "auto" }}
