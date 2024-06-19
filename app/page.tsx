@@ -10,7 +10,7 @@ import {
 } from "@/components/Titles";
 import { kodeTechName } from "@/constants/variables";
 import { Paragraph } from "@/components/Paragraph";
-import { ServicesSolutionsSlider } from "@/components/Sliders";
+import { CaseStudySlider, ServicesSolutionsSlider } from "@/components/Sliders";
 
 export default function Home() {
   
@@ -81,20 +81,13 @@ export default function Home() {
       <div className="ourServices d-flex flex-column flex-lg-row justify-content-center align-items-start sec-x-padding py-5"></div>
 
       {/* section 5 - Case Studies */}
-      <div className="ourSolutions d-flex flex-column justify-content-center align-items-center sec-x-padding py-5">
+      <div className="ourSolutions sec-x-padding py-5">
         <SectionTitleStyleTwo
           textColor="#ffffff"
           title="Case Studies"
           desc="These feedbacks will confirm to you that we have led our clients to success."
         />
-        <Image
-          src={caseDevice1}
-          width={300}
-          height={300}
-          className="img-fluid"
-          alt={""}
-          style={{ width: "100%", height: "auto" }}
-        />
+        <CaseStudySlider />
       </div>
 
       {/* section 6 - Our Clients */}

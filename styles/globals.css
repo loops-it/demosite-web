@@ -309,3 +309,9 @@ body {
   bottom: 0;
   right: 0;
 }
+
+.caseCard{
+  background-color: transparent;
+  padding: 20px;
+  max-width: 75vw;
+}
