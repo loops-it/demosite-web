@@ -128,6 +128,9 @@ export default function Home() {
           <KnoledgeCard img={imgBlog3} id="1" title="Transforming Sri Lankan Banking : The Power of Data" description="I am excited to explore the profound impact that data visualization and prediction technologies can have on Sri Lankan banks, allowing them to provide a truly customized user experience.  " buttonText="Learn More" buttonLink="/" />
           </div>
         </div>
+        <div className="d-flex pt-5 pb-2 justify-content-center align-items-center w-100">
+        <ButtonPrimaryArrow id="buttonNav" title="See All" link="/" />
+        </div>
       </div>
       
     </main>

@@ -194,6 +194,7 @@ body {
   border-radius: 8px;
   text-decoration: none !important;
   width: max-content;
+  padding: 10px 20px !important;
 }
 
 .lineShort {
@@ -344,10 +345,12 @@ body {
   color: #252B42;
   font-weight: 600;
   min-height: 53px;
+  line-height: 30px;
 }
 .blogCardDescription{
   font-size: 14px;
   color: #737373;
   font-weight: 400;
   min-height: 127px;
+  line-height: 20px;
 }
