@@ -10,7 +10,7 @@ import {
 } from "@/components/Titles";
 import { kodeTechName } from "@/constants/variables";
 import { Paragraph } from "@/components/Paragraph";
-import { CaseStudySlider, ServicesSolutionsSlider, TestimonialSlider } from "@/components/Sliders";
+import { CaseStudySlider, ClientSlider, ServicesSolutionsSlider, TestimonialSlider } from "@/components/Sliders";
 import { KnoledgeCard } from "@/components/Cards/KnoledgeCard";
 
 export default function Home() {
@@ -92,12 +92,13 @@ export default function Home() {
       </div>
 
       {/* section 6 - Our Clients */}
-      <div className="ourServices d-flex flex-column flex-lg-row justify-content-center align-items-start sec-x-padding py-5">
+      <div className="ourServices sec-x-padding py-5">
         <SectionTitleStyleTwo
           textColor="#000000"
           title="Our Clients"
           desc="Thousands of leading brands from all over the world trust our solutions and choose us as a partner."
         />
+        <ClientSlider />
       </div>
 
       {/* section 7 - Testimonials */}

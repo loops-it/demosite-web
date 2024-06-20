@@ -3,6 +3,8 @@ import React from 'react';
 import { ServicesSolutions } from './ServiceSolutionSlide';
 import { CaseStudySlide } from './CaseStudySlide';
 import { TestimonialSlide } from './TestimonialSlide';
+import { logoDialog, logoHavlock, logoImorich, logoLSEG, logoPeoples, logoRauland } from '@/constants/images';
+import { ClientLogoSlide } from './ClientCard';
 
 
 
@@ -36,14 +38,14 @@ export const CaseStudySlider = () => {
             <div className="d-block mb-5 position-relative" style={{ display: 'block !important' }}>
                 <Carousel autoplay effect="fade">
                     <div key="slide1">
-                        <CaseStudySlide />                    
-                        </div>
+                        <CaseStudySlide />
+                    </div>
                     <div key="slide2">
-                        <CaseStudySlide />                    
-                        </div>
+                        <CaseStudySlide />
+                    </div>
                     <div key="slide3">
-                        <CaseStudySlide />                    
-                        </div>
+                        <CaseStudySlide />
+                    </div>
                 </Carousel>
             </div>
         </>
@@ -62,10 +64,41 @@ export const TestimonialSlider = () => {
                         <TestimonialSlide id={1} name='Rachintha de Silva' description="I had a wonderful experience working with Kodetech solutions . They provide professional high quality and creative solutions. The service provided by Kodetech solutions in terms of web site and booking platform was exellent.  " position="CEO (Vacation.lk)" rating={3} />
                     </div>
                     <div key="slide2">
-                    <TestimonialSlide id={2} name='Rachintha de Silva' description="I had a wonderful experience working with Kodetech solutions . They provide professional high quality and creative solutions. The service provided by Kodetech solutions in terms of web site and booking platform was exellent.  " position="CEO (Vacation.lk)" rating={5} />
+                        <TestimonialSlide id={2} name='Rachintha de Silva' description="I had a wonderful experience working with Kodetech solutions . They provide professional high quality and creative solutions. The service provided by Kodetech solutions in terms of web site and booking platform was exellent.  " position="CEO (Vacation.lk)" rating={5} />
                     </div>
                     <div key="slide3">
-                    <TestimonialSlide id={3} name='Rachintha de Silva' description="I had a wonderful experience working with Kodetech solutions . They provide professional high quality and creative solutions. The service provided by Kodetech solutions in terms of web site and booking platform was exellent.  " position="CEO (Vacation.lk)" rating={4} />
+                        <TestimonialSlide id={3} name='Rachintha de Silva' description="I had a wonderful experience working with Kodetech solutions . They provide professional high quality and creative solutions. The service provided by Kodetech solutions in terms of web site and booking platform was exellent.  " position="CEO (Vacation.lk)" rating={4} />
+                    </div>
+                </Carousel>
+            </div>
+        </>
+    );
+};
+
+
+export const ClientSlider = () => {
+
+    return (
+        <>
+            <div className="d-block p-5 position-relative" style={{ display: 'block !important' }}>
+                <Carousel infinite={true} slidesPerRow={6} slidesToScroll={1} arrows={true} autoplay effect="fade" centerMode={true} dots={false} className="testimonial-carousel p-5">
+                    <div key="slide1">
+                        <ClientLogoSlide imagePath={logoPeoples} />
+                    </div>
+                    <div key="slide2">
+                        <ClientLogoSlide imagePath={logoLSEG} />
+                    </div>
+                    <div key="slide3">
+                        <ClientLogoSlide imagePath={logoRauland} />
+                    </div>
+                    <div key="slide4">
+                        <ClientLogoSlide imagePath={logoHavlock} />
+                    </div>
+                    <div key="slide5">
+                        <ClientLogoSlide imagePath={logoDialog} />
+                    </div>
+                    <div key="slide6">
+                        <ClientLogoSlide imagePath={logoImorich} />
                     </div>
                 </Carousel>
             </div>
