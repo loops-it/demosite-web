@@ -3,10 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaChevronRight } from 'react-icons/fa6';
-// import Swiper JS
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/css';
 import { ServiceArrow } from '../SVG/serviceArrow';
 
 
