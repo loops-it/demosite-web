@@ -338,3 +338,16 @@ body {
   color: #000;
   font-weight: 300;
 }
+
+.blogCardTitle{
+  font-size: 22px;
+  color: #252B42;
+  font-weight: 600;
+  min-height: 53px;
+}
+.blogCardDescription{
+  font-size: 14px;
+  color: #737373;
+  font-weight: 400;
+  min-height: 127px;
+}

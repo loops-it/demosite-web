@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "@/styles/page.module.css";
 import { ButtonHero, ButtonPrimaryArrow } from "@/components/Buttons";
-import { caseDevice1, whoWeAre } from "@/constants/images";
+import { caseDevice1, imgBlog1, imgBlog2, imgBlog3, whoWeAre } from "@/constants/images";
 import {
   HeadingOne,
   HeroTitle,
@@ -11,6 +11,7 @@ import {
 import { kodeTechName } from "@/constants/variables";
 import { Paragraph } from "@/components/Paragraph";
 import { CaseStudySlider, ServicesSolutionsSlider, TestimonialSlider } from "@/components/Sliders";
+import { KnoledgeCard } from "@/components/Cards/KnoledgeCard";
 
 export default function Home() {
   
@@ -110,12 +111,23 @@ export default function Home() {
       </div>
 
       {/* section 8 - Knowledge Centre */}
-      <div className="ourServices d-flex flex-column flex-lg-row justify-content-center align-items-start sec-x-padding py-5">
+      <div className="ourServices d-flex flex-column justify-content-center align-items-start sec-x-padding py-5">
         <SectionTitleStyleTwo
           textColor="#000000"
           title="Knowledge Centre"
           desc="These feedbacks will confirm to you that we have led our clients to success."
         />
+        <div className="row row-cols-3">
+          <div className="col-12 col-lg-4">
+          <KnoledgeCard id="1" img={imgBlog1} title="Conquer Resistance: Unleash Your True Power" description="In the journey of life, we often find ourselves facing an invisible force that knows no bounds, respects no deadlines, and cares not for our aspirations. The resistance lurks in the shadows, impeding our progress and hindering our creative endeavors. " buttonText="Learn More" buttonLink="/" />
+          </div>
+          <div className="col-12 col-lg-4">
+          <KnoledgeCard img={imgBlog2} id="1" title="Will AI Replace Your Job?" description="In the journey of life, we often find ourselves facing an invisible force that knows no bounds, respects no deadlines, and cares not for our aspirations. The resistance lurks in the shadows, impeding our progress and hindering our creative endeavors. " buttonText="Learn More" buttonLink="/" />
+          </div>
+          <div className="col-12 col-lg-4">
+          <KnoledgeCard img={imgBlog3} id="1" title="Transforming Sri Lankan Banking : The Power of Data" description="I am excited to explore the profound impact that data visualization and prediction technologies can have on Sri Lankan banks, allowing them to provide a truly customized user experience.  " buttonText="Learn More" buttonLink="/" />
+          </div>
+        </div>
       </div>
       
     </main>
