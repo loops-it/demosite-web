@@ -81,7 +81,7 @@ export const ClientSlider = () => {
     return (
         <>
             <div className="d-block p-5 position-relative" style={{ display: 'block !important' }}>
-                <Carousel infinite={true} slidesPerRow={6} slidesToScroll={1} arrows={true} autoplay effect="fade" centerMode={true} dots={false} className="testimonial-carousel p-5">
+                <Carousel infinite = {true} slidesPerRow= {6} slidesToScroll={1} arrows={true} autoplay effect="fade" centerMode={true} dots={false} className="testimonial-carousel p-5">
                     <div key="slide1">
                         <ClientLogoSlide imagePath={logoPeoples} />
                     </div>

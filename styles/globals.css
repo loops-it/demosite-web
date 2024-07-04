@@ -381,3 +381,36 @@ body {
   left: -2px !important;
   top: 0px !important;
 }
+
+.arrowButtonRedLineH {
+  color:  var(--color-primary-red) !important;
+  background-color: #fff;
+  font-family: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none !important;
+  width: max-content;
+  padding: 0px;
+}
+
+.blogCardDescriptionH{
+  font-size: 12px;
+  color: #737373;
+  font-weight: 400;
+  /* min-height: 127px; */
+  line-height: 20px;
+}
+.blogCardDescriptionL{
+  font-size: 12px;
+  color: #737373;
+  font-weight: 400;
+  /* min-height: 127px; */
+  line-height: 20px;
+}
+.blogCardTitleH{
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  line-height: 30px;
+}
