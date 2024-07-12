@@ -27,6 +27,9 @@ interface HeadingOne {
 interface SectionTitle {
     title: string;
 }
+interface SectionTitleAboutus {
+    title: string;
+}
 
 interface SectionTitleStyleTwo {
     title: string;
@@ -85,6 +88,18 @@ export const SectionTitle: React.FC<SectionTitle> = ({ title }) => {
         </>
     );
 };
+export const SectionTitleAboutus: React.FC<SectionTitle> = ({ title }) => {
+
+    return (
+        <>
+            <div className="d-flex flex-row align-items-center mb-0">
+                <div className="lineShort"></div>
+                <div className="lineLong"></div>
+                <h2 className="mb-0 secTitleOne">{title}</h2>
+            </div>
+        </>
+    );
+};
 
 export const SectionTitleStyleTwo: React.FC<SectionTitleStyleTwo> = ({ title, desc, textColor }) => {
 
@@ -92,6 +107,18 @@ export const SectionTitleStyleTwo: React.FC<SectionTitleStyleTwo> = ({ title, de
         <>
             <div className="d-flex flex-column align-items-center mb-5 secTitleStyleTwo">
                 <h2 className="mb-4" style={{color: `${textColor}`}}>{title}</h2>
+                <p className="mb-0" style={{color: `${textColor}`}}>{desc}</p>
+            </div>
+        </>
+    );
+};
+
+export const SectionTitleStyleTwo2: React.FC<SectionTitleStyleTwo> = ({ title, desc, textColor }) => {
+
+    return (
+        <>
+            <div className="d-flex flex-column align-items-center mb-5 secTitleStyleTwo">
+                <h1 className="mb-4" style={{color: `${textColor}`}}>{title}</h1>
                 <p className="mb-0" style={{color: `${textColor}`}}>{desc}</p>
             </div>
         </>
