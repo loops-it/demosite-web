@@ -96,10 +96,10 @@ export const AllClientSlider = () => {
   ];
 
   // Chunk clients into groups of 18 (6 columns * 3 rows)
-  {/*const chunkedClients = [];
+  const chunkedClients = [];
   for (let i = 0; i < clients.length; i += 18) {
     chunkedClients.push(clients.slice(i, i + 18));
-  }*/}
+  }
 
   return (
     <>
@@ -108,45 +108,72 @@ export const AllClientSlider = () => {
         style={{ display: "block !important" }}
       >
         <Carousel autoplay effect="fade">
-          {/*<div key="slide1">
+          <div key="slide1">
             {chunkedClients.map((group, index) => (
               <div
                 key={index}
-                className="clientcardcontainer d-flex row row-cols-2 row-cols-md-3 row-cols-lg-6 mt-5"
+                className="clientcardcontainer d-flex row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 mt-3"
               >
                 {group.map((client) => (
-                  <div style={{backgroundColor: " #f9f9f9", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)", padding:"20px", alignItems:'center', justifyContent:"center", margin: '2px' }} key={client.id} className="col p-5">
+                  <div
+                    style={{
+                      backgroundColor: "#FFFFFF",
+                      // boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                    key={client.id}
+                    className="col d-flex justify-content-evenly"
+                  >
                     <Image src={client.img} alt={client.name} />
                   </div>
                 ))}
               </div>
             ))}
-          </div>*/}
+          </div>
           <div key="slide2">
-            {clients.map((group, index) => (
+            {chunkedClients.map((group, index) => (
               <div
                 key={index}
-                className="clientcardcontainer d-flex row row-cols-2 row-cols-md-3 row-cols-lg-6 mt-5"
+                className="clientcardcontainer d-flex row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 mt-3"
               >
-                {/* {group.map((client) => ( */}
-                  <div key={group.id} className="clientcard col p-5">
-                    <Image src={group.img} alt={group.name} />
+                {group.map((client) => (
+                  <div
+                    style={{
+                      backgroundColor: "#FFFFFF",
+                      // boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                    key={client.id}
+                    className="col d-flex justify-content-evenly"
+                  >
+                    <Image src={client.img} alt={client.name} />
                   </div>
-                {/* ))} */}
+                ))}
               </div>
             ))}
           </div>
           <div key="slide3">
-          {clients.map((group, index) => (
+            {chunkedClients.map((group, index) => (
               <div
                 key={index}
-                className="clientcardcontainer d-flex row row-cols-2 row-cols-md-3 row-cols-lg-6 mt-5"
+                className="clientcardcontainer d-flex row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 mt-3"
               >
-                {/* {group.map((client) => ( */}
-                  <div key={group.id} className="clientcard col p-5">
-                    <Image src={group.img} alt={group.name} />
+                {group.map((client) => (
+                  <div
+                    style={{
+                      backgroundColor: "#FFFFFF",
+                      //boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                    key={client.id}
+                    className="col d-flex justify-content-evenly"
+                  >
+                    <Image src={client.img} alt={client.name} />
                   </div>
-                {/* ))} */}
+                ))}
               </div>
             ))}
           </div>

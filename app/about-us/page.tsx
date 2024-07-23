@@ -4,7 +4,6 @@ import styles from "@/styles/aboutus.module.css";
 import { kodeTechName } from "@/constants/variables";
 import { HeroTitle2 } from "@/components/Titles";
 import { ButtonHero } from "@/components/Buttons";
-
 import { AllClientSlider, TestimonialSlider } from "@/components/Sliders";
 import {
   SectionTitleStyleTwo2,
@@ -12,27 +11,119 @@ import {
 } from "@/components/Titles";
 
 const AboutUsPage: React.FC = () => {
-  
   return (
     <>
-      <div className={styles.backgroundContainer}>
-        <img
-          src="/aboutus/about-us-content-img.png"
-          alt="Overlay"
-          className={styles.overlay}
-        />
-        <div className="col-12 p-5 align-items-start justify-content-center max-width-on-xl-screen d-flex flex-column h-100 text-white">
+    <div className="d-xl-none d-xxl-none">
+        <div className={`${styles.backgroundContainer}`}>
+          <img
+            src="/aboutus/about-us-content-img.png"
+            alt="Overlay"
+            className={styles.overlay}
+          />
+        </div>
+
+        <div className="col-12 p-5 pt-5 align-items-start justify-content-center max-width-on-xl-screen d-flex flex-column h-100 text-white">
           <HeroTitle2
             id="1"
             titleLineOne={"Start to achieve"}
             titleLineTwo={"Your Success With"}
             titleInRedColor={kodeTechName}
-            titleLineOneStyle={{ fontSize: "70px", fontWeight: "normal" }}
-            titleLineTwoStyle={{ fontSize: "70px", fontWeight: "normal" }}
+            titleLineOneStyle={{
+              color: "black",
+              fontSize: "6vw",
+              fontWeight: "normal",
+            }}
+            titleLineTwoStyle={{
+              color: "black",
+              fontSize: "6vw",
+              fontWeight: "normal",
+            }}
+          />
+          <ButtonHero id="buttonNav" title="Contact Us" link="/contact-us"/>
+        </div>
+      </div>
+
+      {/* <div className="d-md-none d-lg-none ">
+        <div className={`${styles.backgroundContainer}`}>
+          <img
+            src="/aboutus/about-us-content-img.png"
+            alt="Overlay"
+            className={styles.overlay}
+          />
+        </div>
+
+        <div className="col-12 p-5 pt-5 align-items-start justify-content-center max-width-on-xl-screen d-flex flex-column h-100 text-white d-md-none d-lg-none">
+          <HeroTitle2
+            id="1"
+            titleLineOne={"Start to achieve"}
+            titleLineTwo={"Your Success With"}
+            titleInRedColor={kodeTechName}
+            titleLineOneStyle={{
+              color: "black",
+              fontSize: "36px",
+              fontWeight: "normal",
+            }}
+            titleLineTwoStyle={{
+              color: "black",
+              fontSize: "36px",
+              fontWeight: "normal",
+            }}
           />
           <ButtonHero id="buttonNav" title="Contact Us" link="/contact-us" />
         </div>
       </div>
+
+      <div className="d-none d-md-flex d-lg-none ">
+        <div className={`${styles.backgroundContainer}`}>
+          <img
+            src="/aboutus/about-us-content-img.png"
+            alt="Overlay"
+            className={styles.overlay}
+          />
+        </div>
+
+        <div className="col-12 p-5 pt-5 align-items-start justify-content-center max-width-on-xl-screen d-flex flex-column h-100 text-white d-lg-none">
+          <HeroTitle2
+            id="1"
+            titleLineOne={"Start to achieve"}
+            titleLineTwo={"Your Success With"}
+            titleInRedColor={kodeTechName}
+            titleLineOneStyle={{
+              color: "black",
+              fontSize: "36px",
+              fontWeight: "normal",
+            }}
+            titleLineTwoStyle={{
+              color: "black",
+              fontSize: "36px",
+              fontWeight: "normal",
+            }}
+          />
+          <ButtonHero id="buttonNav" title="Contact Us" link="/contact-us" />
+        </div>
+      </div> */}
+
+      <div className="d-none d-lg-none d-md-none d-sm-none d-xl-flex d-xxl-flex">
+        <div className={`${styles.backgroundContainer}`}>
+          <img
+            src="/aboutus/about-us-content-img.png"
+            alt="Overlay"
+            className={styles.overlay}
+          />
+          <div className="col-12 p-5 align-items-start justify-content-center max-width-on-xl-screen d-flex flex-column h-100 text-white">
+            <HeroTitle2
+              id="1"
+              titleLineOne={"Start to achieve"}
+              titleLineTwo={"Your Success With"}
+              titleInRedColor={kodeTechName}
+              titleLineOneStyle={{ fontSize: "70px", fontWeight: "normal" }}
+              titleLineTwoStyle={{ fontSize: "70px", fontWeight: "normal" }}
+            />
+            <ButtonHero id="buttonNav" title="Contact Us" link="/contact-us" />
+          </div>
+        </div>
+      </div>
+
       <div className={styles.container}>
         <div className={styles.imagesContainer}>
           <img src="/aboutus/img1.png" alt="Image 1" className={styles.image} />
@@ -97,6 +188,7 @@ const AboutUsPage: React.FC = () => {
         <div className={styles.statbox}>
           <h1>10</h1>
           <p>Countries</p>
+          
         </div>
       </div>
       <div className={styles.app}>
@@ -183,11 +275,15 @@ const AboutUsPage: React.FC = () => {
         </div>
       </div>
       <div className="clientscarousel text-center">
-      <h1 className="p-3">Our Clients</h1>
-      <p className="p-1">Thousands of leading brands from all over the world trust our solutions and choose us as a partner.</p>
+        <h1 className="p-3">Our Clients</h1>
+        <p className="p-1">
+          Thousands of leading brands from all over the world trust our
+          solutions and choose us as a partner.
+        </p>
 
-      {/* <AllClientSlider /> */}
-    </div>
+        <AllClientSlider />
+
+      </div>
       <div className="ourSolutions sec-x-padding py-5">
         <SectionTitleStyleTwo2
           textColor="#ffffff"
@@ -196,15 +292,39 @@ const AboutUsPage: React.FC = () => {
         />
         <TestimonialSlider />
       </div>
-      <div className={styles.AI}>
-        <h2>Build better AI product fast</h2>
-        <p>Let our AI simplify the process, allowing you to focus on your</p>
-        <p>vision while we handle the technical details.</p>
-        <br />
+      <div className="container d-lg-none d-xl-none d-xxl-none">
+        <div className="row">
+          <div
+            className={`${styles.AI} col-12 col-md-6 d-flex align-items-center flex-column text-start`}
+          >
+            <h2>Build better AI product fast</h2>
+            <p>Let our AI simplify the process, </p>
+            <p>allowing you to focus on your</p>
+            <p>vision while we handle the technical</p>
+            <p> details.</p>
+          </div>
+          <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mt-3 mt-md-0">
+            <button type="submit" className={styles.buttonaboutus}>
+              Contact us &nbsp; &gt;
+            </button>
+          </div>
+        </div>
       </div>
-      <button style={{ marginBottom: '0%', marginTop: '-200px'}} type="submit" className={styles.buttonaboutus}>
-        Contact us &nbsp; &gt;
-      </button>
+
+      <div className="flex-row d-none d-lg-flex d-md-none d-sm-none d-xl-flex d-xxl-flex ">
+        <div
+          className={`${styles.AI} col d-flex align-items-start flex-column text-start`}
+        >
+          <h2>Build better AI product fast</h2>
+          <p className="flex-row">Let our AI simplify the process, allowing you to focus on your</p>
+          <p>vision while we handle the technical details.</p>
+        </div>
+        <div className="col d-flex align-items-center">
+          <button type="submit" className={styles.buttonaboutus}>
+            Contact us &nbsp; &gt;
+          </button>
+        </div>
+      </div>
     </>
   );
 };
