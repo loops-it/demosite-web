@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import pageStyles from '@/styles/page.module.css'
 import Link from 'next/link'
-import { ButtonPrimary } from '../Buttons'
+import { ButtonPrimary, ButtonTransparentArrow } from '../Buttons'
 
 const Header = () => {
 

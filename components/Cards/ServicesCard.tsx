@@ -94,6 +94,47 @@ export const ServicesCardLeft: React.FC<KnoledgeCardProps> = ({
     );
   };
 
+  export const ServicesCardLeft2: React.FC<KnoledgeCardProps> = ({
+    id,
+    img,
+    title,
+    description,
+    buttonText,
+    buttonLink,
+  }) => {
+    return (
+      <>
+        <div
+          className="d-flex position-relative sliderCard card shadow border-0 rounded-3 p-0"
+          style={{ margin: "0px auto" }}
+        >
+          <div className="d-flex flex-column p-0" style={{ zIndex: "1" }}>
+            <Image
+              src={img}
+              width={800}
+              height={800}
+              className="img-fluid mb-3 p-0"
+              alt={""}
+              style={{ width: "100%", height: "auto", borderTopRightRadius: '8px', borderTopLeftRadius: '8px' }}
+            />
+           <div className="d-flex flex-column px-3 pb-4">
+           <h3 className="mb-0 blogCardTitle2">{title}</h3>
+            <p className="blogCardDescriptionL2" style={{minHeight: 'max-content !important'}}>{description}</p>
+            <Link
+              className="arrowButtonRedLine"
+              href={buttonLink}
+              style={{ padding: "10px 20px !important" }}
+            >
+              {buttonText}
+              <FaChevronRight />
+            </Link>
+           </div>
+          </div>
+        </div>
+      </>
+    );
+  };
+
 export const HorizontalServicesCard: React.FC<KnoledgeCardProps> = ({
   id,
   img,

@@ -92,7 +92,7 @@ export const SectionTitleStyleTwo: React.FC<SectionTitleStyleTwo> = ({ title, de
         <>
             <div className="d-flex flex-column align-items-center mb-5 secTitleStyleTwo">
                 <h2 className="mb-4" style={{color: `${textColor}`}}>{title}</h2>
-                <p className="mb-0" style={{color: `${textColor}`}}>{desc}</p>
+                <p className="mb-0 text-center" style={{color: `${textColor}`}}>{desc}</p>
             </div>
         </>
     );
