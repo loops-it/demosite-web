@@ -15,7 +15,7 @@ const AboutUsPage: React.FC = () => {
     <>
     <div className="d-xl-none d-xxl-none">
         <div className={`${styles.backgroundContainer}`}>
-          <img
+          <Image
             src="/aboutus/about-us-content-img.png"
             alt="Overlay"
             className={styles.overlay}
@@ -105,7 +105,7 @@ const AboutUsPage: React.FC = () => {
 
       <div className="d-none d-lg-none d-md-none d-sm-none d-xl-flex d-xxl-flex">
         <div className={`${styles.backgroundContainer}`}>
-          <img
+          <Image
             src="/aboutus/about-us-content-img.png"
             alt="Overlay"
             className={styles.overlay}
@@ -126,14 +126,14 @@ const AboutUsPage: React.FC = () => {
 
       <div className={styles.container}>
         <div className={styles.imagesContainer}>
-          <img src="/aboutus/img1.png" alt="Image 1" className={styles.image} />
-          <img
+          <Image src="/aboutus/img1.png" alt="Image 1" className={styles.image} />
+          <Image
             src="/aboutus/img2.png"
             alt="Image 2"
             className={styles.image2}
           />
-          <img src="/aboutus/img3.png" alt="Image 3" className={styles.image} />
-          <img
+          <Image src="/aboutus/img3.png" alt="Image 3" className={styles.image} />
+          <Image
             src="/aboutus/img4.png"
             alt="Image 4"
             className={styles.image2}
@@ -201,7 +201,7 @@ const AboutUsPage: React.FC = () => {
         </header>
         <div className={styles.cardcontainer}>
           <div className={styles.card}>
-            <img
+            <Image
               src="/aboutus/settings_icon.png"
               alt="Icon"
               className={styles.icon}
@@ -213,7 +213,7 @@ const AboutUsPage: React.FC = () => {
             </p>
           </div>
           <div className={styles.card}>
-            <img
+            <Image
               src="/aboutus/settings_icon.png"
               alt="Icon"
               className={styles.icon}
@@ -225,7 +225,7 @@ const AboutUsPage: React.FC = () => {
             </p>
           </div>
           <div className={styles.card}>
-            <img
+            <Image
               src="/aboutus/settings_icon.png"
               alt="Icon"
               className={styles.icon}
@@ -237,7 +237,7 @@ const AboutUsPage: React.FC = () => {
             </p>
           </div>
           <div className={styles.card}>
-            <img
+            <Image
               src="/aboutus/settings_icon.png"
               alt="Icon"
               className={styles.icon}
@@ -249,7 +249,7 @@ const AboutUsPage: React.FC = () => {
             </p>
           </div>
           <div className={styles.card}>
-            <img
+            <Image
               src="/aboutus/settings_icon.png"
               alt="Icon"
               className={styles.icon}
@@ -261,7 +261,7 @@ const AboutUsPage: React.FC = () => {
             </p>
           </div>
           <div className={styles.card}>
-            <img
+            <Image
               src="/aboutus/settings_icon.png"
               alt="Icon"
               className={styles.icon}

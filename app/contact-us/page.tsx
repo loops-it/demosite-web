@@ -11,7 +11,7 @@ const ContactUsPage: React.FC = () => {
     <>
       <div className="d-xl-none d-xxl-none">
         <div className={`${styles.backgroundContainer}`}>
-          <img
+          <Image
             src="/backgrounds/contactus-bg-content-img.png"
             alt="Overlay"
             className={styles.overlay}
@@ -71,7 +71,7 @@ const ContactUsPage: React.FC = () => {
       
       <div className="d-none d-lg-none d-md-none d-sm-none d-xl-flex d-xxl-flex">
       <div className={styles.backgroundContainer}>
-        <img
+        <Image
           src="/backgrounds/contactus-bg-content-img.png"
           alt="Overlay"
           className={styles.overlay}
@@ -120,7 +120,7 @@ const ContactUsPage: React.FC = () => {
         </p>
         <p>
           question about our services, or simply want to explore collaboration
-          opportunities, we're here for you.
+          opportunities, we&apos;re here for you.
         </p>
       </div>
       <br></br>
@@ -176,7 +176,7 @@ const ContactUsPage: React.FC = () => {
           <div className={styles.contactDetails}>
             <div className={styles.contactItem}>
               <div className="d-flex flex-row align-item-center justify-content-center">
-                <img
+                <Image
                   style={{ marginTop: "0px" }}
                   src="/contactUs/Phone.png"
                   alt="Phone"
@@ -195,7 +195,7 @@ const ContactUsPage: React.FC = () => {
             </div>
             <div className={styles.contactItem}>
               <div className="d-flex flex-row align-item-center justify-content-center">
-                <img
+                <Image
                   style={{ marginTop: "0px" }}
                   src="/contactUs/Location.png"
                   alt="Location"
@@ -214,7 +214,7 @@ const ContactUsPage: React.FC = () => {
             </div>
             <div className={styles.contactItem}>
               <div className="d-flex flex-row align-item-center justify-content-center">
-                <img
+                <Image
                   style={{ marginTop: "0px" }}
                   src="/contactUs/Email.png"
                   alt="Email"
@@ -233,13 +233,13 @@ const ContactUsPage: React.FC = () => {
               <p>Connect With Us</p>
               <div className={styles.icons}>
                 <a href="#">
-                  <img src="/contactUs/linkedin.png" alt="LinkedIn" />
+                  <Image src="/contactUs/linkedin.png" alt="LinkedIn" />
                 </a>
                 <a href="#">
-                  <img src="/contactUs/Facebook.png" alt="Facebook" />
+                  <Image src="/contactUs/Facebook.png" alt="Facebook" />
                 </a>
                 <a href="#">
-                  <img src="/contactUs/Instagram.png" alt="Instagram" />
+                  <Image src="/contactUs/Instagram.png" alt="Instagram" />
                 </a>
               </div>
             </div>
