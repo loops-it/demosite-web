@@ -28,6 +28,17 @@
   }
 }
 
+@media (max-width: 1800px) {
+  :root {
+    --main-vw-padding: 50px;
+    --hero-title-font-size: 70px;
+    --hero-title-line-height: 80px;
+    --headingStyleFS: 40px;
+    --paraStyleTwo: 16px;
+    --secTitleFS: 40px;
+  }
+}
+
 @media (max-width: 1400px) {
   :root {
     --main-vw-padding: 50px;
@@ -56,6 +67,8 @@
     --paraStyleTwo: 14px;
   }
 }
+
+
 
 
 * {
@@ -159,13 +172,48 @@ body {
 /* styles - who we are sec*/
 .whoWeAre {
   height: 85vh;
-  width: 100vw;
-  background-color: #c5c5c55b;
+  width: 95vw;
+  background-color: var(--color-white);
+  border: 1px solid black;
+  margin-left: 25px;
+  border-radius: 20px;
+ 
+  
+
+  
+}
+
+.whowearemobile {
+  
+  width: 95vw;
+  background-color: var(--color-white);
+  border: 1px solid black;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.whoweareipad {
+  
+  width: 95vw;
+  background-color: var(--color-white);
+  border: 1px solid black;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.whowearetab {
+  
+  width: 95vw;
+  background-color: var(--color-white);
+  border: 1px solid black;
+  margin-left: 15px;
+  border-radius: 20px;
 }
 
 .whoWeAreImg {
   width: 80%;
   height: auto;
+  
   border-radius: 20px;
 }
 
@@ -192,6 +240,18 @@ body {
   font-family: 16px;
   font-weight: 500;
   border-radius: 8px;
+  text-decoration: none !important;
+  width: max-content;
+  padding: 10px 20px !important;
+}
+
+.arrowButtontransparentBg {
+  color: var(--color-primary-red) !important;
+  background-color: transparent !important;
+  font-family: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid var(--color-primary-red);
   text-decoration: none !important;
   width: max-content;
   padding: 10px 20px !important;
@@ -250,9 +310,7 @@ body {
   padding: 20px;
   max-width: 75vw;
 }
-.sliderCard .left{
-  /* background-color: #fff; */
-}
+
 
 .sliderCard .right{
   background-color: #FFF4F4;
@@ -347,6 +405,42 @@ body {
   min-height: 53px;
   line-height: 30px;
 }
+
+.blogCardTitle2{
+  font-size: 22px;
+  color: #252B42;
+  font-weight: 600;
+  height: 90px;
+  line-height: 30px;
+}
+
+@media (min-width: 765px) and (max-width: 1200px) {
+
+  .blogCardTitle2{
+    font-size: 25px;
+    color: #252B42;
+    font-weight: 600;
+    height: 90px;
+    line-height: 30px;
+  }
+
+  .blogCardDescriptionL2{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #737373;
+    font-weight: 400;
+   height: 120px;
+    line-height: 20px;
+  }
+ 
+}
+
+
+
+
+
+
 .blogCardDescription{
   font-size: 14px;
   color: #737373;

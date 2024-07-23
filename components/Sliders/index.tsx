@@ -1,36 +1,13 @@
-import { Carousel } from "antd";
-import React from "react";
-import { ServicesSolutions } from "./ServiceSolutionSlide";
-import { CaseStudySlide } from "./CaseStudySlide";
-import { TestimonialSlide } from "./TestimonialSlide";
-import {
-  logoDialog,
-  logoHavlock,
-  logoImorich,
-  logoLSEG,
-  logoPeoples,
-  logoRauland,
-} from "@/constants/images";
-import { ClientLogoSlide } from "./ClientCard";
-import lseg from "@/public/aboutus/lseg.png";
-import rauland from "@/public/aboutus/rauland.png";
-import dell from "@/public/aboutus/dell.png";
-import imorich from "@/public/aboutus/imorich.png";
-import parachute from "@/public/aboutus/parachute.png";
-import havelock from "@/public/aboutus/havelock.png";
-import matchstix from "@/public/aboutus/matchstix.png";
-import veet from "@/public/aboutus/veet.png";
-import nescafe from "@/public/aboutus/nescafe.png";
-import idp from "@/public/aboutus/idp.png";
-import hutch from "@/public/aboutus/hutch.png";
-import shangrila from "@/public/aboutus/shangrila.png";
-import comfort from "@/public/aboutus/comfort.png";
-import maggi from "@/public/aboutus/maggi.png";
-import peoples from "@/public/aboutus/peoples.png";
-import dialog from "@/public/aboutus/dialog.png";
-import jat from "@/public/aboutus/jat.png";
-import bluesky from "@/public/aboutus/bluesky.png";
-import Image from "next/image";
+import { Carousel } from 'antd';
+import React from 'react';
+import { ServicesSolutions } from './ServiceSolutionSlide';
+import { CaseStudySlide } from './CaseStudySlide';
+import { CaseBanner } from './CaseBanner';
+import { TestimonialSlide } from './TestimonialSlide';
+import { logoDialog, logoHavlock, logoImorich, logoLSEG, logoPeoples, logoRauland } from '@/constants/images';
+import { ClientLogoSlide } from './ClientCard';
+
+
 
 export const ServicesSolutionsSlider = () => {
   return (
@@ -205,6 +182,30 @@ export const CaseStudySlider = () => {
     </>
   );
 };
+
+export const CaseBanne = () => {
+
+    return (
+        <>
+            <div className="d-block mb-5 position-relative" style={{ display: 'block !important' }}>
+                <Carousel autoplay effect="fade">
+                    <div key="slide1">
+                        <CaseBanner />
+                    </div>
+                    <div key="slide2">
+                    <CaseBanner />
+                    </div>
+                    <div key="slide3">
+                    <CaseBanner />
+                    </div>
+                </Carousel>
+            </div>
+        </>
+    );
+};
+
+
+
 
 export const TestimonialSlider = () => {
   return (

@@ -6,6 +6,9 @@ import testimonial1 from '@/public/imgs/testimonial1.png'
 import blogImg1 from '@/public/imgs/blog (1).png'
 import blogImg2 from '@/public/imgs/blog (2).png'
 import blogImg3 from '@/public/imgs/blog (3).png'
+import ipadmini from '@/public/imgs/ipadmini.png'
+import freshharvest from '@/public/imgs/freshharvest.png'
+import projectimg1 from '@/public/imgs/projectimg1.png'
 
 import dialog from '@/public/imgs/clients-logo/dialog.png'
 import havlock from '@/public/imgs/clients-logo/havlock.png'
@@ -30,6 +33,9 @@ export const serviceImage1 = service2;
 export const serviceImage2 = service3;
 export const serviceImage3 = service4;
 export const serviceImage4 = service5;
+export const ipadmini11 = ipadmini; 
+export const freshharvest11 = freshharvest;
+export const projectimg11 = projectimg1;
 
 // client logos
 export const logoDialog = dialog;

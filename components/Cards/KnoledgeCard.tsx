@@ -34,3 +34,5 @@ export const KnoledgeCard: React.FC<KnoledgeCardProps> = ({ id,img, title, descr
     );
 };
 
+
+
