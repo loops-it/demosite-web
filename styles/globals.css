@@ -154,6 +154,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-size: auto 80vh, cover;
   background-blend-mode: normal, normal;
+  
 }
 
 .heroSec h2 {
@@ -174,7 +175,7 @@ body {
   height: 85vh;
   width: 95vw;
   background-color: var(--color-white);
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-left: 25px;
   border-radius: 20px;
  
@@ -190,6 +191,7 @@ body {
   border: 1px solid black;
   margin-left: 10px;
   border-radius: 20px;
+  
 }
 
 .whoweareipad {
@@ -507,4 +509,22 @@ body {
   color: #000;
   font-weight: 600;
   line-height: 30px;
+}
+
+
+@media (max-width:765px) {
+
+
+  .whoWeAre {
+  
+    width: 95vw;
+    background-color: var(--color-white);
+    margin-left: 10px;
+    border-radius: 20px;
+    margin-top: 100px;
+    
+  }
+
+  
+  
 }

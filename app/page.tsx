@@ -50,7 +50,7 @@ export default function Home() {
             titleLineTwo={"Your Success With"}
             titleInRedColor={kodeTechName}
           />
-          <ButtonHero id="buttonNav" title="Contact Us" link="/" />
+          <ButtonHero id="buttonNav" title="Contact Us" link="/contact-us" />
         </div>
       </div>
 

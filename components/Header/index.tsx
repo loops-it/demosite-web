@@ -19,7 +19,7 @@ const Header = () => {
         {
             id: 1,
             title: 'About Us',
-            link: '/',
+            link: '/about-us',
             type: 'linkType'
         },
         {
@@ -43,7 +43,7 @@ const Header = () => {
         {
             id: 1,
             title: 'Contact Us',
-            link: '/',
+            link: '/contact-us',
             type: 'buttonType'
         }
     ]

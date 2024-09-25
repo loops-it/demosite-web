@@ -55,7 +55,7 @@ export const HeroTitle2: React.FC<HeroTitle2> = ({ id, titleLineOne, titleLineTw
             <div id={id} className="mb-4">
             <h2 style={titleLineOneStyle}>{titleLineOne}</h2>
             <h2 style={titleLineTwoStyle}>{titleLineTwo} </h2>
-            <span style={{ color: 'red', fontSize: '6vw', fontWeight: 'normal' }}>{titleInRedColor}</span>
+            <span style={{ color: 'red', fontSize: '6vw', fontWeight: '700' }}>{titleInRedColor}</span>
             </div>
         </>
     );

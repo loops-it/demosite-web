@@ -19,6 +19,8 @@ const AboutUsPage: React.FC = () => {
             src="/aboutus/about-us-content-img.png"
             alt="Overlay"
             className={styles.overlay}
+            height={500}
+            width={500}
           />
         </div>
 
@@ -109,6 +111,8 @@ const AboutUsPage: React.FC = () => {
             src="/aboutus/about-us-content-img.png"
             alt="Overlay"
             className={styles.overlay}
+            width={500}
+            height={500}
           />
           <div className="col-12 p-5 align-items-start justify-content-center max-width-on-xl-screen d-flex flex-column h-100 text-white">
             <HeroTitle2
@@ -126,17 +130,33 @@ const AboutUsPage: React.FC = () => {
 
       <div className={styles.container}>
         <div className={styles.imagesContainer}>
-          <Image src="/aboutus/img1.png" alt="Image 1" className={styles.image} />
+          <Image 
+            src="/aboutus/img1.png" 
+            alt="Image 1" 
+            className={styles.image}
+            height={266.76}
+            width={259.21} 
+          />
           <Image
             src="/aboutus/img2.png"
             alt="Image 2"
             className={styles.image2}
+            height={266.76}
+            width={259.21} 
           />
-          <Image src="/aboutus/img3.png" alt="Image 3" className={styles.image} />
+          <Image 
+            src="/aboutus/img3.png" 
+            alt="Image 3" 
+            className={styles.image}
+            height={266.76}
+            width={259.21} 
+            />
           <Image
             src="/aboutus/img4.png"
             alt="Image 4"
             className={styles.image2}
+            height={266.76}
+            width={259.21} 
           />
         </div>
         <div className={styles.textContainer}>
@@ -205,6 +225,8 @@ const AboutUsPage: React.FC = () => {
               src="/aboutus/settings_icon.png"
               alt="Icon"
               className={styles.icon}
+              height={45}
+              width={45}
             />
             <h2>Lorem Ipsum</h2>
             <p>
@@ -217,6 +239,8 @@ const AboutUsPage: React.FC = () => {
               src="/aboutus/settings_icon.png"
               alt="Icon"
               className={styles.icon}
+              height={45}
+              width={45}
             />
             <h2>Lorem Ipsum</h2>
             <p>
@@ -229,6 +253,8 @@ const AboutUsPage: React.FC = () => {
               src="/aboutus/settings_icon.png"
               alt="Icon"
               className={styles.icon}
+              height={45}
+              width={45}
             />
             <h2>Lorem Ipsum</h2>
             <p>
@@ -241,6 +267,8 @@ const AboutUsPage: React.FC = () => {
               src="/aboutus/settings_icon.png"
               alt="Icon"
               className={styles.icon}
+              height={45}
+              width={45}
             />
             <h2>Lorem Ipsum</h2>
             <p>
@@ -253,6 +281,8 @@ const AboutUsPage: React.FC = () => {
               src="/aboutus/settings_icon.png"
               alt="Icon"
               className={styles.icon}
+              height={45}
+              width={45}
             />
             <h2>Lorem Ipsum</h2>
             <p>
@@ -265,6 +295,8 @@ const AboutUsPage: React.FC = () => {
               src="/aboutus/settings_icon.png"
               alt="Icon"
               className={styles.icon}
+              height={45}
+              width={45}
             />
             <h2>Lorem Ipsum</h2>
             <p>

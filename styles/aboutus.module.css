@@ -124,8 +124,11 @@
   }
   
   .header h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 10px;
+  font-weight: 600;
+  
+  
   }
   
   .header p {
@@ -167,6 +170,7 @@
   font-size: 24px;
   margin-top: 40px;
   color: #333;
+  font-weight: 500;
   }
   
   .card p {
@@ -365,8 +369,9 @@
   }
   
   .header h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 10px;
+  font-weight: 600;
   }
   
   .header p {
@@ -602,8 +607,9 @@
   }
   
   .header h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 10px;
+  font-weight: 600;
   }
   
   .header p {
@@ -841,8 +847,9 @@
   }
   
   .header h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 10px;
+  font-weight: 600;
   }
   
   .header p {
@@ -1085,8 +1092,9 @@
   }
   
   .header h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 10px;
+  font-weight: 600;
   }
   
   .header p {
@@ -1317,8 +1325,9 @@
   }
   
   .header h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 10px;
+  font-weight: 600;
   }
   
   .header p {
@@ -1549,8 +1558,9 @@
   }
   
   .header h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 10px;
+  font-weight: 600;
   }
   
   .header p {
@@ -1781,8 +1791,9 @@
   }
   
   .header h1 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 10px;
+  font-weight: 600;
   }
   
   .header p {

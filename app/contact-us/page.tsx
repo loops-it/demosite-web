@@ -15,6 +15,9 @@ const ContactUsPage: React.FC = () => {
             src="/backgrounds/contactus-bg-content-img.png"
             alt="Overlay"
             className={styles.overlay}
+            width={500}
+            height={500}
+            
           />
         </div>
 
@@ -75,6 +78,9 @@ const ContactUsPage: React.FC = () => {
           src="/backgrounds/contactus-bg-content-img.png"
           alt="Overlay"
           className={styles.overlay}
+          width={500}
+          height={500}
+
         />
 
         <div className="col-12 p-5 pt-5 align-items-start justify-content-center max-width-on-xl-screen d-flex flex-column h-100 text-white">
@@ -181,6 +187,8 @@ const ContactUsPage: React.FC = () => {
                   src="/contactUs/Phone.png"
                   alt="Phone"
                   className={styles.icon}
+                  width={18}
+                  height={18}
                 />
                 <p className="mb-0 " style={{ lineHeight: "20px" }}>
                   Phone
@@ -200,6 +208,8 @@ const ContactUsPage: React.FC = () => {
                   src="/contactUs/Location.png"
                   alt="Location"
                   className={styles.icon}
+                  width={18}
+                  height={18}
                 />
                 <p className="mb-0 " style={{ lineHeight: "20px" }}>
                   Location
@@ -219,6 +229,8 @@ const ContactUsPage: React.FC = () => {
                   src="/contactUs/Email.png"
                   alt="Email"
                   className={styles.icon}
+                  width={18}
+                  height={18}
                 />
                 <p className="mb-0 " style={{ lineHeight: "20px" }}>
                   Email
@@ -233,13 +245,24 @@ const ContactUsPage: React.FC = () => {
               <p>Connect With Us</p>
               <div className={styles.icons}>
                 <a href="#">
-                  <Image src="/contactUs/linkedin.png" alt="LinkedIn" />
+                  <Image src="/contactUs/linkedin.png" alt="LinkedIn" 
+                  width={62.03}
+                  height={61.65}
+                  / >
                 </a>
                 <a href="#">
-                  <Image src="/contactUs/Facebook.png" alt="Facebook" />
+                  <Image 
+                    src="/contactUs/Facebook.png" 
+                    alt="Facebook" 
+                    width={62.03}
+                    height={61.65}/>
                 </a>
                 <a href="#">
-                  <Image src="/contactUs/Instagram.png" alt="Instagram" />
+                  <Image 
+                    src="/contactUs/Instagram.png" 
+                    alt="Instagram" 
+                    width={62.03}
+                    height={61.65}/>
                 </a>
               </div>
             </div>
